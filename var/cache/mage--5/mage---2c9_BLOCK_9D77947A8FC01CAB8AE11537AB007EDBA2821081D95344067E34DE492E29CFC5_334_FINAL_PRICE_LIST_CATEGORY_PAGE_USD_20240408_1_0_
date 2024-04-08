@@ -1,0 +1,15 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1712577248;s:6:"expire";i:1712663648;s:4:"tags";s:47:"2c9_BLOCK_HTML,2c9_CAT_P_334,2c9_CAT_P,2c9_MAGE";}
+<div class="price-box price-final_price" data-role="priceBox" data-product-id="334" data-price-box="product-id-334"><span class="normal-price">
+    <!-- START_MSPDEV[01c7acbc687b0cbbf52a5db841970ec8]: magento\framework\pricing\render\amount_8 --><div
+    x-data x-id="['product\u002Dprice\u002D334']"    class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+            <span class="price-label">As low as</span>
+        <span  :id="$id('product\u002Dprice\u002D334')"                data-price-amount="99"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">$99.00</span></span>
+        </div>
+<!-- END_MSPDEV[01c7acbc687b0cbbf52a5db841970ec8]: magento\framework\pricing\render\amount_8 --></span>
+
+
+</div>

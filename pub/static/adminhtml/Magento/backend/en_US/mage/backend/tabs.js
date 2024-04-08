@@ -1,0 +1,1 @@
+/var/www/hyva-magento/lib/web/mage/backend/tabs.js
