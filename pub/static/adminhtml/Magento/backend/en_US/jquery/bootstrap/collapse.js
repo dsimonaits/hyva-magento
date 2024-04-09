@@ -1,1 +1,0 @@
-/var/www/hyva-magento/lib/web/jquery/bootstrap/collapse.js

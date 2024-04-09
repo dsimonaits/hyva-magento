@@ -3,13 +3,13 @@
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_file" xsi:type="string">
-                    images/hyva.png
+                    images/hyva-logo.svg
                 </argument>
                 <argument name="logo_width" xsi:type="number">
-                    200
+                    100
                 </argument>
                 <argument name="logo_height" xsi:type="number">
-                    200
+                    100
                 </argument>
             </arguments>
         </referenceBlock>

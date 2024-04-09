@@ -3,6 +3,7 @@ const url = require('url');
 const fs = require('fs');
 
 let baseDir = path.resolve(__dirname);
+let magentoDir = baseDir + '/../../../../../';
 do {
     baseDir = baseDir.split('/').slice(0, -1).join('/');
 } while (baseDir !== '' && ! fs.existsSync(baseDir + '/app'));
@@ -36,6 +37,7 @@ module.exports = {
         `${baseDir}/**/*.css`,
         `${baseDir}/**/*.xml`,
         `${baseDir}/**/*.phtml`,
+        `${magentoDir}/app/code/**/*.phtml`,
     ],
 };
 
