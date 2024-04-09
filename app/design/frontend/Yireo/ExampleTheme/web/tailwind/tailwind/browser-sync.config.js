@@ -13,7 +13,7 @@ if (baseDir === '') {
     require('process').exit(1)
 }
 
-const proxy = process.env.PROXY_URL || 'http://hyva-magento.local/';
+const proxy = process.env.PROXY_URL || 'http://magento.local/';
 const port = process.env.PORT || 3000;
 const { host } = url.parse(proxy);
 
