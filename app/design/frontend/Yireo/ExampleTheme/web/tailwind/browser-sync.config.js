@@ -15,7 +15,7 @@ if (baseDir === '') {
 }
 
 const proxy = process.env.PROXY_URL || 'http://hyva-magento.local/';
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 const { host } = url.parse(proxy);
 
 if (typeof process.env.PROXY_URL === 'undefined') {

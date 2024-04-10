@@ -6,6 +6,11 @@ const colors = require('tailwindcss/colors');
 
 const hyvaModules = require('@hyva-themes/hyva-modules');
 
+
+const root = '../../../../../../../';
+const defaultTheme = require('tailwindcss/defaultTheme');
+
+
 module.exports = hyvaModules.mergeTailwindConfig({
     theme: {
         extend: {
@@ -22,7 +27,7 @@ module.exports = hyvaModules.mergeTailwindConfig({
 
             },
             fontFamily: {
-                sans: ["Segoe UI", "Helvetica Neue", "Arial", "sans-serif"]
+                sans: ["Segoe UI", "Helvetica Neue", "Arial", "sans-serif", ...defaultTheme.fontFamily.sans]
             },
             colors: {
                 primary: {
@@ -123,14 +128,26 @@ module.exports = hyvaModules.mergeTailwindConfig({
             }
         }
     },
-    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('postcss-import'),
+        require('tailwindcss/nesting'),
+        require('tailwindcss'),
+        require('postcss-font-magician')({display: 'swap'}), require('autoprefixer')],
     // Examples for excluding patterns from purge
     content: [
-        // this theme's phtml and layout XML files
         '../../**/*.phtml',
-        '../../*/layout/*.xml',
-        '../../*/page_layout/override/base/*.xml',
-        '../../../../../../../vendor/hyva-themes/magento2-default-theme/**/*.phtml',
+        root + 'vendor/hyva-themes/magento2-default-theme/**/*.phtml',
+        root + 'app/code/**/*.phtml',
+        root + 'app/code/**/src/**/*.jsx',
+        root + 'vendor/hyva-themes/magento2-hyva-checkout/src/reactapp/src/**/*.jsx',
+        root + 'app/code/**/Block/Widget/**/*.php',
+        // root + 'var/custom_html/**/*'
+
+
+        // this theme's phtml and layout XML files
+        // '../../**/*.phtml',
+        // '../../*/layout/*.xml',
+        // '../../*/page_layout/override/base/*.xml',
+        // '../../../../../../../vendor/hyva-themes/magento2-default-theme/**/*.phtml',
         // parent theme in Vendor (if this is a child-theme)
         //'../../../../../../../vendor/hyva-themes/magento2-default-theme/**/*.phtml',
         //'../../../../../../../vendor/hyva-themes/magento2-default-theme/*/layout/*.xml',
