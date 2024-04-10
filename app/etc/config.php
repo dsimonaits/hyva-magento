@@ -358,6 +358,7 @@ return [
         'MSP_DevTools' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
-        'Temando_ShippingRemover' => 1
+        'Temando_ShippingRemover' => 1,
+        'Yireo_ExampleViewModel' => 1
     ]
 ];
