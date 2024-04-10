@@ -3977,6 +3977,14 @@ a.pagebuilder-button-secondary:focus, button.pagebuilder-button-secondary:focus,
   height: 100%;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
+.h-lvh {
+  height: 100lvh;
+}
+
 .max-h-screen {
   max-height: 100vh;
 }
@@ -3995,6 +4003,10 @@ a.pagebuilder-button-secondary:focus, button.pagebuilder-button-secondary:focus,
 
 .min-h-a11y {
   min-height: 44px;
+}
+
+.min-h-lvh {
+  min-height: 100lvh;
 }
 
 .w-0 {
@@ -4143,6 +4155,10 @@ a.pagebuilder-button-secondary:focus, button.pagebuilder-button-secondary:focus,
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-screen-sm {
+  max-width: 640px;
 }
 
 .flex-1 {
@@ -4475,6 +4491,16 @@ a.pagebuilder-button-secondary:focus, button.pagebuilder-button-secondary:focus,
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * 0);
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * 0);
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * (1 - 0));
+  margin-left: calc(0.5rem * (1 - var(--tw-space-x-reverse)));
+  margin-left: calc(0.5rem * calc(1 - 0));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .self-end {
@@ -5314,6 +5340,30 @@ a.pagebuilder-button-secondary:focus, button.pagebuilder-button-secondary:focus,
   --tw-text-opacity: 1;
   color: rgba(251, 191, 36, 1);
   color: rgba(251, 191, 36, var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgba(59, 130, 246, 1);
+  color: rgba(59, 130, 246, var(--tw-text-opacity));
+}
+
+.text-blue-200 {
+  --tw-text-opacity: 1;
+  color: rgba(191, 219, 254, 1);
+  color: rgba(191, 219, 254, var(--tw-text-opacity));
+}
+
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgba(29, 78, 216, 1);
+  color: rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.text-indigo-600 {
+  --tw-text-opacity: 1;
+  color: rgba(79, 70, 229, 1);
+  color: rgba(79, 70, 229, var(--tw-text-opacity));
 }
 
 .underline {
